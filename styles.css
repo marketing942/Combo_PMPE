@@ -205,9 +205,14 @@ input,button,textarea,select{font-family:inherit;font-size:1rem}
   text-transform:uppercase;color:var(--red-bright);margin-bottom:.5rem}
 .price__row{display:flex;align-items:baseline;gap:.45rem;flex-wrap:wrap}
 .price__old{display:block;color:var(--muted);font-size:.92rem;text-decoration:line-through;margin-bottom:.15rem}
-.price__x{font-family:"Bebas Neue",sans-serif;font-size:1.9rem;line-height:1;color:var(--green)}
-.price__now{font-family:"Bebas Neue",sans-serif;font-size:3.2rem;line-height:.9;color:#fff}
-.price__now span{font-size:1.5rem;vertical-align:.35em;margin-right:.1em}
+/* parcela é o destaque: número grande em vermelho vivo, estilo etiqueta de
+   promoção; o "12x" fica pequeno e discreto ao lado para não competir */
+.price__x{font-family:"Montserrat",sans-serif;font-weight:700;font-size:1rem;line-height:1;
+  color:var(--muted);align-self:center}
+.price__now{font-family:"Bebas Neue",sans-serif;font-size:5rem;line-height:.85;
+  color:var(--red-bright);letter-spacing:.01em;
+  text-shadow:0 2px 0 var(--red-dark),0 6px 24px rgba(225,23,51,.55)}
+.price__now span{font-size:2rem;vertical-align:.95em;margin-right:.08em}
 .price__parcel{margin-top:.5rem;font-size:.95rem;color:var(--white);font-weight:600}
 .price__parcel strong{color:var(--white);font-weight:800}
 .price__note{margin-top:.35rem;font-size:.74rem;color:var(--muted)}
@@ -341,6 +346,8 @@ input,button,textarea,select{font-family:inherit;font-size:1rem}
   box-shadow:0 -8px 30px rgba(0,0,0,.6)}
 .buybar__price{flex:1 1 auto;line-height:1.15;text-align:left}
 .buybar__price b{display:block;font-family:"Bebas Neue",sans-serif;font-size:1.5rem;letter-spacing:.02em}
+.buybar__price b{color:var(--red-bright);font-size:1.75rem;text-shadow:0 3px 14px rgba(225,23,51,.45)}
+.buybar__price b small{font-family:"Montserrat",sans-serif;font-weight:700;font-size:.8rem;color:var(--muted);text-shadow:none}
 .buybar__price s{display:block;font-size:.7rem;color:var(--muted)}
 .buybar__price span{font-size:.68rem;color:var(--muted)}
 .buybar .cta{flex:0 0 auto;width:auto;max-width:none;padding:.85rem 1.15rem;font-size:.82rem}
@@ -443,7 +450,8 @@ input,button,textarea,select{font-family:inherit;font-size:1rem}
 
   /* preço e botão logo abaixo do produto; os bullets viram reforço no fim */
   .price{order:1;margin-bottom:.7rem;padding:.9rem 1rem}
-  .price__now{font-size:2.7rem}
+  .price__now{font-size:4.2rem}
+  .price__now span{font-size:1.7rem}
   .price__tag{margin-bottom:.35rem}
   .price__parcel{font-size:.9rem}
   .hero__offer .cta{order:2}
