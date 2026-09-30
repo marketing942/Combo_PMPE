@@ -12,7 +12,7 @@ mesmo exit popup. O que vale lá (tracking, mobile, publicação na Vercel) vale
 | | Valor |
 |---|---|
 | Checkout | `https://checkout.cppem.com.br/pay/combo-bizurado-pmpe-digital` |
-| Preço | De R$ 189,00 por R$ 139,90 (-26%) |
+| Preço | De R$ 189,00 por R$ 139,90 (-26%) · 12x de R$ 14,60 |
 | `utm_campaign` de fallback | `combo_pmpe` |
 | Evento `iniciar_checkout` | `produto: combo_bizurado_pmpe`, `valor: 139.9` |
 | Chave de origem no storage | `cppem_origem_combo` |
@@ -33,7 +33,7 @@ do resumo.
 
 ## Checklist antes do disparo
 
-- [ ] Parcelamento conferido no checkout (a página diz só "até 12x", sem valor de parcela)
+- [ ] Preço conferido: R$ 139,90 · 12x R$ 14,60 (topo, oferta, barra fixa e rodapé)
 - [ ] Checkout abriu com UTMs e `external_id`
 - [ ] Regra de clique da PixelX disparando neste domínio
 - [ ] Popup de saída testado com `ExitPopup.show()`
