@@ -203,12 +203,13 @@ input,button,textarea,select{font-family:inherit;font-size:1rem}
   box-shadow:0 4px 14px rgba(22,195,74,.4)}
 .price__tag{display:block;font-weight:800;font-size:.68rem;letter-spacing:.14em;
   text-transform:uppercase;color:var(--red-bright);margin-bottom:.5rem}
-.price__row{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
-.price__old{color:var(--muted);font-size:.92rem;text-decoration:line-through}
+.price__row{display:flex;align-items:baseline;gap:.45rem;flex-wrap:wrap}
+.price__old{display:block;color:var(--muted);font-size:.92rem;text-decoration:line-through;margin-bottom:.15rem}
+.price__x{font-family:"Bebas Neue",sans-serif;font-size:1.9rem;line-height:1;color:var(--green)}
 .price__now{font-family:"Bebas Neue",sans-serif;font-size:3.2rem;line-height:.9;color:#fff}
 .price__now span{font-size:1.5rem;vertical-align:.35em;margin-right:.1em}
 .price__parcel{margin-top:.5rem;font-size:.95rem;color:var(--white);font-weight:600}
-.price__parcel strong{color:var(--green);font-weight:800}
+.price__parcel strong{color:var(--white);font-weight:800}
 .price__note{margin-top:.35rem;font-size:.74rem;color:var(--muted)}
 .price--center{margin-left:auto;margin-right:auto;text-align:center}
 .price--center .price__row{justify-content:center}
