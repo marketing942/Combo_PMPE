@@ -10,3 +10,5 @@ _test.js
 _diag.js
 
 .vercel/
+
+.env*
